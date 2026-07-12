@@ -1,0 +1,19 @@
+# State Terraform : contient l'état réel, parfois des secrets
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Dossier de travail Terraform (providers téléchargés)
+.terraform/
+.terraform.lock.hcl
+
+# Valeurs des variables : peuvent contenir des données sensibles
+*.tfvars
+*.tfvars.json
+
+# Fichiers de plan
+*.tfplan
+
+# Credentials AWS (au cas où)
+.aws/
+credentials
