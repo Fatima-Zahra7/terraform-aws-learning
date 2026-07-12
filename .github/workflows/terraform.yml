@@ -15,7 +15,7 @@ jobs:
       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       AWS_DEFAULT_REGION: eu-west-3
-      TF_VAR_bucket_name: tf-premier-pas-fzbekraoui-07
+      TF_VAR_premier_variable: tf-premier-pas-fzbekraoui-07
 
     steps:
       - name: Recuperer le code
