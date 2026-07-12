@@ -20,7 +20,7 @@ resource "aws_s3_bucket" "mon_premier_bucket" {
 
 # 4. On active la versioning sur le bucket S3 créé ci-dessus.
 resource "aws_s3_bucket_versioning" "versioning" {
-  bucket = aws_s3_bucket.mon_premier_bucket.id   # ← on référence le bucket au-dessus
+  bucket = aws_s3_bucket.mon_premier_bucket.id # ← on référence le bucket au-dessus
   versioning_configuration {
     status = "Enabled"
   }
